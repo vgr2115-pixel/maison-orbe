@@ -182,8 +182,8 @@ export default function Contact() {
               </p>
             </div>
             <p className="border-t border-espresso/12 pt-6 text-[12px] leading-relaxed text-charcoal/45">
-              Maison Orbe est une maison fictive : ces coordonnées servent uniquement à la
-              démonstration du site.
+              Les commandes sont préparées à l’atelier et expédiées sous 3 jours ouvrés, du mardi au
+              vendredi.
             </p>
           </div>
         </Reveal>

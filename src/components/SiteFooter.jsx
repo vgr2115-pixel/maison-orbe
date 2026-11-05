@@ -39,9 +39,6 @@ export default function SiteFooter() {
               Des objets faits pour durer. Maroquinerie contemporaine dessinée et assemblée à Lyon,
               en petites séries.
             </p>
-            <p className="mt-4 text-[10px] uppercase tracking-[0.22em] text-ivory/35">
-              Maison fictive · Projet de démonstration
-            </p>
             <p className="mt-5 text-[12px] leading-relaxed text-ivory/40">
               14 rue des Fantasques
               <br />
@@ -83,8 +80,8 @@ export default function SiteFooter() {
         <div className="flex flex-col gap-4 pt-7 text-[11px] leading-relaxed text-ivory/35 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Maison Orbe</p>
           <p className="max-w-xl sm:text-right">
-            Maison Orbe est une maison fictive créée pour un projet de démonstration. Les produits,
-            prix et informations présentés ne constituent pas une offre commerciale.
+            Maison Orbe est une marque fictive, imaginée pour un exercice de direction artistique.
+            Les produits et prix présentés ne constituent pas une offre commerciale.
           </p>
         </div>
       </div>

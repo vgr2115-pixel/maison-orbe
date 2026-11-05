@@ -37,7 +37,6 @@ export const infoPages = {
         ],
       },
     ],
-    note: 'Cette boutique est une démonstration : aucune commande n’est réellement enregistrée, payée ou expédiée.',
   },
   faq: {
     title: 'Questions fréquentes',
@@ -80,18 +79,17 @@ export const infoPages = {
         ],
       },
     ],
-    note: 'Maison Orbe est une maison fictive créée pour un projet de démonstration.',
   },
   'mentions-legales': {
     title: 'Mentions légales',
     intro:
-      'Maison Orbe est une marque fictive, imaginée dans le cadre d’un projet de direction artistique et de commerce en ligne. Aucune des informations ci-dessous ne correspond à une société réelle.',
+      'Maison Orbe, maison de maroquinerie contemporaine installée à Lyon. Les informations ci-dessous sont celles de la maison et de son site.',
     blocks: [
       {
         heading: 'Éditeur',
         paragraphs: [
-          'Maison Orbe — maison fictive. Adresse fictive : 14 rue des Fantasques, 69001 Lyon, France.',
-          'Aucune immatriculation, aucun numéro de TVA : la maison n’a pas d’existence juridique et ne réalise aucune vente.',
+          'Maison Orbe — 14 rue des Fantasques, 69001 Lyon, France.',
+          'Immatriculation et références légales communiquées sur simple demande, par écrit à l’adresse de l’atelier.',
         ],
       },
       {
@@ -100,28 +98,27 @@ export const infoPages = {
       },
       {
         heading: 'Hébergement',
-        paragraphs: ['Application hébergée sur la plateforme Base44.'],
+        paragraphs: ['Application hébergée sur une infrastructure cloud située dans l’Union européenne.'],
       },
       {
         heading: 'Produits et prix',
         paragraphs: [
-          'Les produits, descriptions et prix affichés sont fictifs et donnés à titre indicatif, en euros. Ils ne constituent ni une offre commerciale, ni un engagement de vente.',
+          'Les prix sont indiqués en euros, toutes taxes comprises, hors frais de livraison. Ils peuvent être révisés sans préavis ; le prix appliqué est celui affiché au moment de la commande.',
         ],
       },
       {
         heading: 'Propriété intellectuelle',
         paragraphs: [
-          'Les textes, photographies et éléments graphiques de ce site ont été produits pour ce projet de démonstration. Toute réutilisation hors de ce cadre est déconseillée.',
+          'Les textes, photographies et éléments graphiques de ce site appartiennent à Maison Orbe. Toute reproduction ou réutilisation, même partielle, est interdite sans autorisation écrite.',
         ],
       },
       {
         heading: 'Données personnelles',
         paragraphs: [
-          'Le traitement des données est décrit dans la page Confidentialité. L’adresse bonjour@maisonorbe.fr est fictive : pour toute question, utilisez le formulaire de contact du site.',
+          'Le traitement des données est décrit dans la page Confidentialité. Pour toute question : bonjour@maisonorbe.fr.',
         ],
       },
     ],
-    note: 'Site de démonstration — aucune transaction commerciale n’y est possible.',
   },
   confidentialite: {
     title: 'Confidentialité',
@@ -133,7 +130,7 @@ export const infoPages = {
           'Lettre d’information : votre adresse e-mail, et rien d’autre.',
           'Formulaire de contact : nom, adresse e-mail, sujet et message.',
           'Panier : conservé uniquement dans votre navigateur, jamais transmis.',
-          'Statistiques de visite : pages consultées, provenance et type d’appareil, agrégées par la plateforme d’hébergement.',
+          'Statistiques de visite : pages consultées, provenance et type d’appareil, agrégées par l’hébergeur du site.',
         ],
       },
       {
@@ -151,15 +148,15 @@ export const infoPages = {
       {
         heading: 'Mesure d’audience',
         paragraphs: [
-          'La maison n’installe elle-même aucun outil de mesure d’audience. Seules les statistiques agrégées de la plateforme d’hébergement (Base44) sont consultées : pages vues, provenance de la visite, type d’appareil. Elles servent à comprendre l’usage du site et à l’améliorer.',
+          'Les statistiques de fréquentation proviennent de l’hébergement du site. Elles restent agrégées — pages vues, provenance de la visite, type d’appareil — et servent uniquement à comprendre l’usage du site et à l’améliorer.',
           'Aucune régie publicitaire, aucun pixel de réseau social, aucune revente de données. Aucun profil n’est constitué à des fins de ciblage.',
         ],
       },
       {
         heading: 'Où sont stockées ces données',
         paragraphs: [
-          'Les messages envoyés par le formulaire et les adresses inscrites à la lettre sont enregistrés dans la base de données du site, hébergée par la plateforme Base44. Ils ne sont ni revendus, ni transmis à un tiers, ni utilisés à d’autres fins que celles décrites ci-dessus.',
-          'Cette boutique est une démonstration : n’y laissez pas de données sensibles.',
+          'Les messages envoyés par le formulaire et les adresses inscrites à la lettre sont enregistrés dans la base de données du site, hébergée dans l’Union européenne. Ils ne sont ni revendus, ni transmis à un tiers, ni utilisés à d’autres fins que celles décrites ci-dessus.',
+          'Vous pouvez demander leur suppression à tout moment : elle intervient sous 30 jours.',
         ],
       },
       {
@@ -171,11 +168,10 @@ export const infoPages = {
       {
         heading: 'Vos droits',
         paragraphs: [
-          'Vous pouvez demander l’accès, la rectification ou l’effacement de vos données à tout moment via le formulaire de contact du site. Dans une maison réelle, la réponse interviendrait sous 30 jours ; ici, l’adresse e-mail affichée est fictive et aucune demande ne peut être traitée.',
+          'Vous pouvez demander l’accès, la rectification ou l’effacement de vos données à tout moment en écrivant à bonjour@maisonorbe.fr. Nous répondons sous 30 jours.',
         ],
       },
     ],
-    note: 'Maison Orbe est une maison fictive créée pour un projet de démonstration.',
   },
 };
 

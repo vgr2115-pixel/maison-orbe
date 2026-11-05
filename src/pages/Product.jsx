@@ -31,7 +31,7 @@ export default function Product() {
     return (
       <NotFoundMessage
         title="Cette pièce n’existe pas"
-        message="Le modèle demandé ne fait pas partie de la collection. Les sept pièces des Essentiels vous attendent."
+        message="Le modèle demandé ne fait pas partie de la collection. Les sept pièces vous attendent."
         backTo="/collection"
         backLabel="Voir la collection"
       />

@@ -147,12 +147,11 @@ export default function Cart() {
             {noticeOpen && (
               <div className="mt-4 border border-espresso/20 bg-ivory p-5">
                 <p className="text-[11px] uppercase tracking-[0.2em] text-espresso/55">
-                  Boutique de démonstration
+                  Commande de démonstration
                 </p>
                 <p className="mt-3 text-[13.5px] leading-[1.75] text-charcoal/70">
-                  Maison Orbe est une maison fictive. Aucun paiement n’est traité et aucune commande
-                  n’est enregistrée : ce panier vous permet uniquement de vérifier le parcours
-                  d’achat.
+                  Aucun paiement n’est demandé et aucune commande n’est enregistrée : le panier
+                  permet de parcourir le tunnel d’achat jusqu’au bout.
                 </p>
                 <Link
                   to="/contact"
