@@ -45,7 +45,7 @@ export default function CartDrawer() {
                     Votre panier est vide.
                   </p>
                   <p className="mt-3 text-[14px] leading-relaxed text-espresso/60">
-                    Quatre objets, trois couleurs, une seule collection.
+                    Sept objets, trois couleurs, une seule collection.
                   </p>
                   <Link
                     to="/collection"

@@ -22,7 +22,7 @@ export default function Featured() {
       </Reveal>
 
       <div className="mt-12 grid grid-cols-1 gap-x-7 gap-y-14 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
-        {products.map((product, index) => (
+        {products.slice(0, 4).map((product, index) => (
           <Reveal
             key={product.slug}
             delay={index * 0.07}

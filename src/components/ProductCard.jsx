@@ -12,10 +12,10 @@ export default function ProductCard({ product, priority = false }) {
       <div className="relative overflow-hidden bg-sand/45">
         <div className="aspect-[4/5]">
           <Image
-            src={product.variants[colour]}
+            src={product.variants[colour][0]}
             alt={`${product.name} en cuir ${colour.toLowerCase()}`}
             fittingType="fill"
-            className="h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.035]"
+            className="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.035]"
             loading={priority ? 'eager' : 'lazy'}
           />
         </div>

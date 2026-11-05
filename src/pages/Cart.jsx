@@ -20,7 +20,7 @@ export default function Cart() {
           Votre panier est vide.
         </h1>
         <p className="mt-5 max-w-md text-[15.5px] leading-[1.8] text-charcoal/65">
-          Quatre objets, trois couleurs, une seule collection. Prenez le temps de regarder.
+          Sept objets, trois couleurs, une seule collection. Prenez le temps de regarder.
         </p>
         <Link to="/collection" className="btn-solid mt-9 self-start">
           Voir la collection

@@ -39,6 +39,9 @@ export default function SiteFooter() {
               Des objets faits pour durer. Maroquinerie contemporaine dessinée et assemblée à Lyon,
               en petites séries.
             </p>
+            <p className="mt-4 text-[10px] uppercase tracking-[0.22em] text-ivory/35">
+              Maison fictive · Projet de démonstration
+            </p>
             <p className="mt-5 text-[12px] leading-relaxed text-ivory/40">
               14 rue des Fantasques
               <br />

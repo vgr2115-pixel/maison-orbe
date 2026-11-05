@@ -31,7 +31,7 @@ export default function Manifesto() {
               </Reveal>
               <Reveal delay={0.16}>
                 <p className="text-[15.5px] leading-[1.8] text-espresso/75">
-                  Pas de collection saisonnière, pas de logo visible. Quatre pièces qui couvrent le
+                  Pas de collection saisonnière, pas de logo visible. Sept pièces qui couvrent le
                   quotidien, dans trois couleurs qui traversent les années.
                 </p>
               </Reveal>

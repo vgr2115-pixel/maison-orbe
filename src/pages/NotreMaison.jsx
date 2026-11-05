@@ -24,8 +24,8 @@ export default function NotreMaison() {
           <div className="lg:col-span-5">
             <p className="text-[15.5px] leading-[1.8] text-charcoal/70">
               Maison Orbe est née à Lyon, d’une frustration simple : trouver un objet bien fait, sans
-              logo, qui ne coûte pas le prix d’un mythe. Nous avons commencé avec quatre pièces. Nous
-              en sommes toujours là.
+              logo, qui ne coûte pas le prix d’un mythe. Nous avons commencé avec quatre pièces ;
+              nous en avons aujourd’hui sept, et cela nous suffit.
             </p>
           </div>
         </Reveal>
@@ -139,7 +139,7 @@ export default function NotreMaison() {
       <section className="border-t border-espresso/12">
         <div className="mx-auto flex max-w-[1500px] flex-col items-start justify-between gap-6 px-6 py-14 sm:px-10 lg:flex-row lg:items-center lg:px-[5vw]">
           <p className="max-w-lg font-heading text-[clamp(1.6rem,2.8vw,2.2rem)] leading-[1.2] text-espresso">
-            Les quatre essentiels vous attendent.
+            Les sept essentiels vous attendent.
           </p>
           <Link to="/collection" className="btn-solid">
             Voir la collection

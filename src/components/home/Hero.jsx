@@ -75,15 +75,15 @@ export default function Hero() {
             className="relative h-[58vh] min-h-[340px] w-full overflow-hidden bg-sand/40 sm:h-[64vh] lg:h-[calc(100vh-78px)] lg:max-h-[860px]"
           >
             <Image
-              src={IMAGES.almaCognac}
-              alt="Le Sac Alma en cuir cognac, posé sur un rebord de pierre dans la lumière du matin"
+              src={IMAGES.heroEditorial}
+              alt="Une main en manche de laine portant Le Sac Alma en cuir cognac dans l’entrée d’un appartement lyonnais"
               fittingType="fill"
               className="h-full w-full object-cover"
               loading="eager"
             />
           </motion.div>
           <p className="absolute bottom-4 right-4 bg-ivory/90 px-3 py-1.5 text-[9.5px] uppercase tracking-[0.24em] text-espresso/80">
-            Le Sac Alma — Cognac
+            Le Sac Alma — Cognac, porté
           </p>
         </div>
       </div>

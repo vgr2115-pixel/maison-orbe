@@ -3,7 +3,7 @@ import Reveal from '@/components/Reveal';
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/data/collection';
 
-const FILTERS = ['Tous', 'Sacs', 'Petite maroquinerie'];
+const FILTERS = ['Tous', ...Array.from(new Set(products.map((product) => product.category)))];
 
 export default function Collection() {
   const [filter, setFilter] = useState('Tous');
@@ -19,7 +19,7 @@ export default function Collection() {
             Les Essentiels
           </h1>
           <p className="mt-6 max-w-lg text-[15.5px] leading-[1.8] text-charcoal/70">
-            Quatre objets pour le quotidien, dessinés dans la même logique : lignes simples, cuir
+            Sept objets pour le quotidien, dessinés dans la même logique : lignes simples, cuir
             pleine fleur, aucune signature apparente. Trois couleurs, disponibles toute l’année.
           </p>
         </div>

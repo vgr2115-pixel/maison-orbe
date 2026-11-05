@@ -14,12 +14,18 @@ export default function Product() {
   const product = getProduct(slug);
   const { addItem } = useCart();
   const [colour, setColour] = useState(DEFAULT_COLOUR);
+  const [imageIndex, setImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     setColour(DEFAULT_COLOUR);
+    setImageIndex(0);
     setQuantity(1);
   }, [slug]);
+
+  useEffect(() => {
+    setImageIndex(0);
+  }, [colour]);
 
   if (!product) {
     return (
@@ -47,26 +53,29 @@ export default function Product() {
           <div className="lg:col-span-7">
             <div className="aspect-[4/5] w-full overflow-hidden bg-sand/40">
               <Image
-                src={product.variants[colour]}
-                alt={`${product.name} en cuir ${colour.toLowerCase()}`}
+                src={product.variants[colour][imageIndex]}
+                alt={`${product.name} en cuir ${colour.toLowerCase()} — vue ${imageIndex + 1}`}
                 fittingType="fill"
                 className="h-full w-full object-cover"
                 loading="eager"
               />
             </div>
             <div className="mt-4 flex gap-3">
-              {COLOUR_ORDER.map((name) => (
+              {product.variants[colour].map((source, index) => (
                 <button
-                  key={name}
+                  key={source}
                   type="button"
-                  onClick={() => setColour(name)}
-                  aria-label={`Voir en ${name}`}
-                  className={`h-[74px] w-[60px] overflow-hidden border transition-colors ${
-                    colour === name ? 'border-espresso' : 'border-espresso/15 hover:border-espresso/40'
+                  onClick={() => setImageIndex(index)}
+                  aria-label={`Vue ${index + 1}`}
+                  aria-pressed={imageIndex === index}
+                  className={`h-[86px] w-[68px] overflow-hidden border transition-colors ${
+                    imageIndex === index
+                      ? 'border-espresso'
+                      : 'border-espresso/15 hover:border-espresso/40'
                   }`}
                 >
                   <Image
-                    src={product.variants[name]}
+                    src={source}
                     alt=""
                     fittingType="fill"
                     className="h-full w-full object-cover"
@@ -74,6 +83,9 @@ export default function Product() {
                   />
                 </button>
               ))}
+              <p className="ml-2 self-end pb-1 text-[10.5px] uppercase tracking-[0.18em] text-espresso/40">
+                Vue {imageIndex + 1} / {product.variants[colour].length}
+              </p>
             </div>
           </div>
 
@@ -123,7 +135,7 @@ export default function Product() {
                     name: product.name,
                     price: product.price,
                     colour,
-                    image: product.variants[colour],
+                    image: product.variants[colour][0],
                     quantity,
                   })
                 }

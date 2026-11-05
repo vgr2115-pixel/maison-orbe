@@ -45,7 +45,7 @@ export const journalPosts = [
     body: [
       'Une collection saisonnière a besoin de nouvelles couleurs pour exister. Nous n’en faisons pas. Notre travail est de rendre les mêmes objets disponibles assez longtemps pour qu’on puisse les remplacer, les associer, ou simplement en offrir un.',
       'Noir parce qu’il traverse tout. Cognac parce que c’est la couleur du cuir avant qu’on le travaille, celle qui révèle le mieux sa matière. Sable parce qu’il laisse respirer un intérieur, une garde-robe claire, un été.',
-      'Trois teintes, quatre objets, une seule logique : ce qui reste quand on arrête de changer.',
+      'Trois teintes, sept objets, une seule logique : ce qui reste quand on arrête de changer.',
     ],
     quote: 'Une couleur qui traverse dix ans vaut mieux que dix couleurs qui traversent une saison.',
   },

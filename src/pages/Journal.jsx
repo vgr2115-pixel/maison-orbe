@@ -27,7 +27,7 @@ export default function Journal() {
                   src={post.image}
                   alt={post.title}
                   fittingType="fill"
-                  className="h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.035]"
+                  className="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.035]"
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
               </div>

@@ -132,6 +132,7 @@ export const infoPages = {
           'Lettre d’information : votre adresse e-mail, et rien d’autre.',
           'Formulaire de contact : nom, adresse e-mail, sujet et message.',
           'Panier : conservé uniquement dans votre navigateur, jamais transmis.',
+          'Mesure d’audience : pages consultées, provenance et type d’appareil, sans identifiant personnel.',
         ],
       },
       {
@@ -147,9 +148,16 @@ export const infoPages = {
         ],
       },
       {
-        heading: 'Cookies et mesure d’audience',
+        heading: 'Mesure d’audience',
         paragraphs: [
-          'Aucun traceur publicitaire ni outil de mesure d’audience n’est installé sur ce site. Seul votre panier est enregistré localement par votre navigateur, pour qu’il vous suive d’une page à l’autre.',
+          'Le site s’appuie sur les statistiques de visite agrégées de sa plateforme d’hébergement : pages consultées, provenance de la visite, type d’appareil. Ces données servent uniquement à comprendre l’usage du site et à l’améliorer.',
+          'Aucun outil publicitaire — régie, pixel de réseau social — n’est installé, aucun profil individuel n’est constitué et aucune donnée n’est revendue.',
+        ],
+      },
+      {
+        heading: 'Stockage local',
+        paragraphs: [
+          'Votre panier est enregistré dans votre navigateur, sur votre appareil, pour qu’il vous suive d’une page à l’autre. Il n’est transmis à personne et disparaît si vous effacez les données du site.',
         ],
       },
       {
