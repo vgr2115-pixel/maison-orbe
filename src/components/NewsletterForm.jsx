@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { base44 } from '@/api/base44Client';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
 export default function NewsletterForm({ tone = 'light' }) {
   const [email, setEmail] = useState('');
@@ -10,13 +10,14 @@ export default function NewsletterForm({ tone = 'light' }) {
 
   const submit = async (event) => {
     event.preventDefault();
-    if (!email.includes('@')) {
+    const value = email.trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value)) {
       setStatus('invalid');
       return;
     }
     setStatus('loading');
     try {
-      await base44.entities.Subscriber.create({ email: email.trim().toLowerCase() });
+      await base44.entities.Subscriber.create({ email: value });
       setStatus('done');
       setEmail('');
     } catch {
@@ -26,8 +27,13 @@ export default function NewsletterForm({ tone = 'light' }) {
 
   if (status === 'done') {
     return (
-      <p className={`text-[14px] leading-relaxed ${isDark ? 'text-ivory/75' : 'text-charcoal/70'}`}>
-        Merci. Vous recevrez nos prochaines nouvelles, sans excès.
+      <p
+        className={`flex items-start gap-3 border-t pt-4 text-[14px] leading-relaxed ${
+          isDark ? 'border-ivory/15 text-ivory/80' : 'border-espresso/15 text-charcoal/75'
+        }`}
+      >
+        <Check className="mt-[3px] h-4 w-4 shrink-0" strokeWidth={1.5} />
+        <span>Merci. Vous recevrez la prochaine lettre, et rien d’autre entre-temps.</span>
       </p>
     );
   }
@@ -45,6 +51,8 @@ export default function NewsletterForm({ tone = 'light' }) {
               setStatus('idle');
             }}
             placeholder="Votre adresse e-mail"
+            autoComplete="email"
+            required
             className={`field-line ${isDark ? 'border-ivory/30 text-ivory placeholder:text-ivory/40 focus:border-ivory/80' : ''}`}
           />
         </label>
@@ -73,7 +81,7 @@ export default function NewsletterForm({ tone = 'light' }) {
         {status === 'invalid' && 'Merci d’indiquer une adresse e-mail valide.'}
         {status === 'error' && 'L’inscription n’a pas abouti. Réessayez dans un instant.'}
         {status === 'loading' && 'Inscription en cours…'}
-        {status === 'idle' && 'Deux ou trois lettres par an. Aucune donnée transmise.'}
+        {status === 'idle' && 'Trois lettres par an. Désinscription en un clic.'}
       </p>
     </form>
   );
