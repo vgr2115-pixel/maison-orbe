@@ -1,0 +1,41 @@
+{
+  "name": "Enquiry",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nom"
+    },
+    "email": {
+      "type": "string",
+      "title": "Adresse e-mail",
+      "format": "email"
+    },
+    "subject": {
+      "type": "string",
+      "title": "Sujet"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "status": {
+      "type": "string",
+      "title": "Statut",
+      "enum": [
+        "nouveau",
+        "trait\u00e9"
+      ],
+      "enumColors": [
+        "yellow",
+        "green"
+      ],
+      "default": "nouveau"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "message"
+  ]
+}

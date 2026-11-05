@@ -6,7 +6,17 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
-// Add page imports here
+import { CartProvider } from '@/lib/cart';
+import Layout from '@/components/Layout';
+import Home from '@/pages/Home';
+import Collection from '@/pages/Collection';
+import Product from '@/pages/Product';
+import NotreMaison from '@/pages/NotreMaison';
+import Journal from '@/pages/Journal';
+import JournalArticle from '@/pages/JournalArticle';
+import Cart from '@/pages/Cart';
+import Contact from '@/pages/Contact';
+import InfoPage from '@/pages/InfoPage';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -34,7 +44,17 @@ const AuthenticatedApp = () => {
   // Render the main app
   return (
     <Routes>
-      {/* Add your page Route elements here */}
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/collection/:slug" element={<Product />} />
+        <Route path="/notre-maison" element={<NotreMaison />} />
+        <Route path="/journal" element={<Journal />} />
+        <Route path="/journal/:slug" element={<JournalArticle />} />
+        <Route path="/panier" element={<Cart />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/informations/:slug" element={<InfoPage />} />
+      </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
@@ -48,7 +68,9 @@ function App() {
       <QueryClientProvider client={queryClientInstance}>
         <Router>
           <ScrollToTop />
-          <AuthenticatedApp />
+          <CartProvider>
+            <AuthenticatedApp />
+          </CartProvider>
         </Router>
         <Toaster />
       </QueryClientProvider>
