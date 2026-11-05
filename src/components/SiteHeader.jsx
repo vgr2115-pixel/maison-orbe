@@ -41,7 +41,7 @@ export default function SiteHeader() {
               type="button"
               onClick={() => setMenuOpen(true)}
               aria-label="Ouvrir le menu"
-              className="lg:hidden"
+              className="-ml-2 p-2 lg:hidden"
             >
               <Menu className="h-5 w-5" strokeWidth={1.25} />
             </button>
@@ -81,7 +81,7 @@ export default function SiteHeader() {
             <button
               type="button"
               onClick={openCart}
-              className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-espresso/80 transition-colors hover:text-espresso"
+              className="-mr-2 flex items-center gap-2 p-2 text-[11px] uppercase tracking-[0.2em] text-espresso/80 transition-colors hover:text-espresso"
             >
               <span>Panier</span>
               <span className="tabular-nums">({count})</span>
@@ -101,7 +101,7 @@ export default function SiteHeader() {
           >
             <div className="flex h-[66px] items-center justify-between px-5 sm:px-8">
               <span className="font-heading text-[14px] tracking-[0.38em] text-espresso">MAISON ORBE</span>
-              <button type="button" onClick={() => setMenuOpen(false)} aria-label="Fermer le menu">
+              <button type="button" onClick={() => setMenuOpen(false)} aria-label="Fermer le menu" className="-mr-2 p-2">
                 <X className="h-5 w-5" strokeWidth={1.25} />
               </button>
             </div>

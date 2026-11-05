@@ -7,7 +7,7 @@ import { products } from '@/data/collection';
 const FILTERS = ['Tous', ...Array.from(new Set(products.map((product) => product.category)))];
 
 const SERVICES = [
-  { title: 'Livraison', detail: 'Offerte dès 150 €, expédiée sous 48 h' },
+  { title: 'Livraison', detail: 'Offerte dès 150 €, expédiée en 3 jours ouvrés' },
   { title: 'Retours', detail: '30 jours, pièce non portée' },
   { title: 'Atelier', detail: 'Coupé et assemblé à Lyon' },
 ];

@@ -33,7 +33,12 @@ export default function CartDrawer() {
               <p className="text-[11px] uppercase tracking-[0.24em] text-espresso">
                 Panier {count > 0 && <span className="text-espresso/50">({count})</span>}
               </p>
-              <button type="button" onClick={closeCart} aria-label="Fermer le panier">
+              <button
+                type="button"
+                onClick={closeCart}
+                aria-label="Fermer le panier"
+                className="-mr-2 p-2"
+              >
                 <X className="h-[18px] w-[18px]" strokeWidth={1.3} />
               </button>
             </div>
@@ -88,7 +93,7 @@ export default function CartDrawer() {
                           <button
                             type="button"
                             onClick={() => removeItem(item.slug, item.colour)}
-                            className="text-[11px] text-espresso/45 underline-offset-4 hover:text-espresso hover:underline"
+                            className="p-1 -m-1 text-[11px] text-espresso/45 underline-offset-4 hover:text-espresso hover:underline"
                           >
                             Retirer
                           </button>
@@ -118,7 +123,9 @@ export default function CartDrawer() {
                   <span className="font-heading text-[24px] text-espresso">{formatPrice(subtotal)}</span>
                 </div>
                 <p className="mt-2 text-[11px] leading-relaxed text-espresso/45">
-                  Livraison offerte dès 150 € — soit incluse ici.
+                  {subtotal >= 150
+                    ? 'Livraison offerte.'
+                    : `Livraison 9 € — offerte dès 150 €, soit ${formatPrice(150 - subtotal)} de plus.`}
                 </p>
                 <Link to="/panier" onClick={closeCart} className="btn-solid mt-5 w-full">
                   Voir le panier

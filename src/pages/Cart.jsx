@@ -53,7 +53,7 @@ export default function Cart() {
               <li key={`${item.slug}-${item.colour}`} className="flex gap-5 py-7">
                 <Link
                   to={`/collection/${item.slug}`}
-                  className="h-[150px] w-[116px] shrink-0 overflow-hidden bg-sand/40"
+                  className="h-[124px] w-[96px] shrink-0 overflow-hidden bg-sand/40 sm:h-[150px] sm:w-[116px]"
                 >
                   <Image
                     src={item.image}

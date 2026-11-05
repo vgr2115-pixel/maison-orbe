@@ -31,7 +31,7 @@ export default function Product() {
     return (
       <NotFoundMessage
         title="Cette pièce n’existe pas"
-        message="Le modèle demandé ne fait pas partie de la collection. Les quatre essentiels vous attendent."
+        message="Le modèle demandé ne fait pas partie de la collection. Les sept pièces des Essentiels vous attendent."
         backTo="/collection"
         backLabel="Voir la collection"
       />
@@ -112,7 +112,7 @@ export default function Product() {
                     onClick={() => setColour(name)}
                     aria-label={name}
                     aria-pressed={colour === name}
-                    className="h-8 w-8 rounded-full transition-transform duration-300 hover:scale-105"
+                    className="h-9 w-9 rounded-full transition-transform duration-300 hover:scale-105"
                     style={{
                       backgroundColor: COLOURS[name].hex,
                       boxShadow:

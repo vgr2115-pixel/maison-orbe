@@ -90,7 +90,8 @@ export const infoPages = {
       {
         heading: 'Éditeur',
         paragraphs: [
-          'Maison Orbe — maison fictive. Adresse de démonstration : 14 rue des Fantasques, 69001 Lyon, France.',
+          'Maison Orbe — maison fictive. Adresse fictive : 14 rue des Fantasques, 69001 Lyon, France.',
+          'Aucune immatriculation, aucun numéro de TVA : la maison n’a pas d’existence juridique et ne réalise aucune vente.',
         ],
       },
       {
@@ -116,7 +117,7 @@ export const infoPages = {
       {
         heading: 'Données personnelles',
         paragraphs: [
-          'Le traitement des données est décrit dans la page Confidentialité. Pour toute question : bonjour@maisonorbe.fr.',
+          'Le traitement des données est décrit dans la page Confidentialité. L’adresse bonjour@maisonorbe.fr est fictive : pour toute question, utilisez le formulaire de contact du site.',
         ],
       },
     ],
@@ -132,7 +133,7 @@ export const infoPages = {
           'Lettre d’information : votre adresse e-mail, et rien d’autre.',
           'Formulaire de contact : nom, adresse e-mail, sujet et message.',
           'Panier : conservé uniquement dans votre navigateur, jamais transmis.',
-          'Mesure d’audience : pages consultées, provenance et type d’appareil, sans identifiant personnel.',
+          'Statistiques de visite : pages consultées, provenance et type d’appareil, agrégées par la plateforme d’hébergement.',
         ],
       },
       {
@@ -144,14 +145,21 @@ export const infoPages = {
       {
         heading: 'Durée de conservation',
         paragraphs: [
-          'Trois ans à compter du dernier contact pour les messages, jusqu’au désabonnement pour la lettre.',
+          'Trois ans à compter du dernier contact pour les messages, et jusqu’à votre demande de suppression pour la lettre.',
         ],
       },
       {
         heading: 'Mesure d’audience',
         paragraphs: [
-          'Le site s’appuie sur les statistiques de visite agrégées de sa plateforme d’hébergement : pages consultées, provenance de la visite, type d’appareil. Ces données servent uniquement à comprendre l’usage du site et à l’améliorer.',
-          'Aucun outil publicitaire — régie, pixel de réseau social — n’est installé, aucun profil individuel n’est constitué et aucune donnée n’est revendue.',
+          'La maison n’installe elle-même aucun outil de mesure d’audience. Seules les statistiques agrégées de la plateforme d’hébergement (Base44) sont consultées : pages vues, provenance de la visite, type d’appareil. Elles servent à comprendre l’usage du site et à l’améliorer.',
+          'Aucune régie publicitaire, aucun pixel de réseau social, aucune revente de données. Aucun profil n’est constitué à des fins de ciblage.',
+        ],
+      },
+      {
+        heading: 'Où sont stockées ces données',
+        paragraphs: [
+          'Les messages envoyés par le formulaire et les adresses inscrites à la lettre sont enregistrés dans la base de données du site, hébergée par la plateforme Base44. Ils ne sont ni revendus, ni transmis à un tiers, ni utilisés à d’autres fins que celles décrites ci-dessus.',
+          'Cette boutique est une démonstration : n’y laissez pas de données sensibles.',
         ],
       },
       {
@@ -163,7 +171,7 @@ export const infoPages = {
       {
         heading: 'Vos droits',
         paragraphs: [
-          'Vous pouvez demander l’accès, la rectification ou l’effacement de vos données à tout moment en écrivant à bonjour@maisonorbe.fr. Nous répondons sous 30 jours.',
+          'Vous pouvez demander l’accès, la rectification ou l’effacement de vos données à tout moment via le formulaire de contact du site. Dans une maison réelle, la réponse interviendrait sous 30 jours ; ici, l’adresse e-mail affichée est fictive et aucune demande ne peut être traitée.',
         ],
       },
     ],

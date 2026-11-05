@@ -81,7 +81,7 @@ export default function NewsletterForm({ tone = 'light' }) {
         {status === 'invalid' && 'Merci d’indiquer une adresse e-mail valide.'}
         {status === 'error' && 'L’inscription n’a pas abouti. Réessayez dans un instant.'}
         {status === 'loading' && 'Inscription en cours…'}
-        {status === 'idle' && 'Trois lettres par an. Désinscription en un clic.'}
+        {status === 'idle' && 'Trois lettres par an. Votre adresse ne circule pas.'}
       </p>
     </form>
   );

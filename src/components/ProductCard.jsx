@@ -34,22 +34,33 @@ export default function ProductCard({ product, priority = false }) {
         </span>
       </div>
 
-      <div className="mt-3 flex items-center gap-2">
+      <div className="-ml-1.5 mt-2 flex items-center">
         {COLOUR_ORDER.map((name) => (
-          <span
+          <button
             key={name}
+            type="button"
+            aria-label={`Voir ${product.name} en ${name}`}
+            aria-pressed={colour === name}
             onMouseEnter={() => setColour(name)}
-            title={name}
-            aria-hidden="true"
-            className="h-[11px] w-[11px] rounded-full transition-transform duration-300 hover:scale-125"
-            style={{
-              backgroundColor: COLOURS[name].hex,
-              boxShadow:
-                colour === name
-                  ? '0 0 0 1px #F4F0E8, 0 0 0 2px rgba(52,37,31,0.45)'
-                  : '0 0 0 1px rgba(52,37,31,0.14)',
+            onFocus={() => setColour(name)}
+            onClick={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              setColour(name);
             }}
-          />
+            className="flex h-7 w-7 items-center justify-center"
+          >
+            <span
+              className="block h-[11px] w-[11px] rounded-full transition-transform duration-300"
+              style={{
+                backgroundColor: COLOURS[name].hex,
+                boxShadow:
+                  colour === name
+                    ? '0 0 0 1px #F4F0E8, 0 0 0 2px rgba(52,37,31,0.45)'
+                    : '0 0 0 1px rgba(52,37,31,0.14)',
+              }}
+            />
+          </button>
         ))}
       </div>
     </Link>
